@@ -37,3 +37,16 @@ body {
     text-align: right;
     padding-right: 15px;
 }
+
+.cal-button:last-child {
+  background-color: #df974c;
+  color: white;
+}
+
+.double {
+    width: 49.7%;
+}
+
+.triple {
+    width: 74.8%;
+}
