@@ -7,39 +7,42 @@
     <link rel="stylesheet" href="./calculator.css" />
 </head>
 <body>
-    <div class="calculator">
-        <input type="text" class="calculator-screen" value="" disabled />
+    <div class="calc">
+        <section class="cal-screen">0</section>
 
         <div class="calculator-keys">
             <div class="cal-button-row">
-                <button class="button">C</button>
-                <button class="button">←</button>
-                <button class="button" class="operator" value="/">&divide;</button>
+                <button class="cal-button">C</button>
+                <button class="cal-button">←</button>
+                <button class="cal-button" class="operator" value="/">&divide;</button>
             </div>
 
             <div class="cal-button-row">
-                <button class="button" value="7">7</button>
-                <button class="button" value="8">8</button>
-                <button class="button" value="9">9</button>
-                <button class="button" class="operator" value="*">x</button> 
+                <button class="cal-button" value="7">7</button>
+                <button class="cal-button" value="8">8</button>
+                <button class="cal-button" value="9">9</button>
+                <button class="cal-button" class="operator" value="*">x</button> 
             </div>
-                
 
-            <button class="button" value="4">4</button>
-            <button class="button" value="5">5</button>
-            <button class="button" value="6">6</button>
-            <button class="button" class="operator" value="-">-</button>
+            <div class="cal-button-row">
+                <button class="cal-button" value="4">4</button>
+                <button class="cal-button" value="5">5</button>
+                <button class="cal-button" value="6">6</button>
+                <button class="cal-button" class="operator" value="-">-</button>
+            </div>
+            
+            <div class="cal-button-row">
+                <button class="cal-button" value="1">1</button>
+                <button class="cal-button" value="2">2</button>
+                <button class="cal-button" value="3">3</button>
+                <button class="cal-button" class="operator" value="+">+</button>
+            </div>
 
-            <button class="button" value="1">1</button>
-            <button class="button" value="2">2</button>
-            <button class="button" value="3">3</button>
-            <button class="button" class="operator" value="+">+</button>
-
-            <button class="button" value="0">0</button>
-            <button class="button" class="equal-sign operator" value="=">=</button>
+            <div class="cal-button-row">
+                <button class="cal-button" value="0">0</button>
+                <button class="cal-button" class="equal-sign operator" value="=">=</button>
+            </div>
         </div>
     </div>
-
-    <script src="./calculator.js"></script>
 </body>
 </html>
