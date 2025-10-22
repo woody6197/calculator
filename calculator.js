@@ -1,7 +1,7 @@
 let runningTotal = 0;
 let buffer = "0";
 let previousOperator;
-const screen = document.querySelector(".screen");
+const screen = document.querySelector(".cal-screen");
 
 function buttonClick(value) {
   if (isNaN(parseInt(value))) {
@@ -22,7 +22,6 @@ function handleNumber(value) {
 
 function handleMath(value) {
   if (buffer === "0") {
-    // do nothing
     return;
   }
 
@@ -58,7 +57,6 @@ function handleSymbol(value) {
       break;
     case "=":
       if (previousOperator === null) {
-        // need two numbers to do math
         return;
       }
       flushOperation(parseInt(buffer));
@@ -88,7 +86,7 @@ function rerender() {
 
 function init() {
   document
-    .querySelector(".cal-buttons")
+    .querySelector(".calculator-keys")
     .addEventListener("click", function (event) {
       buttonClick(event.target.innerText);
     });
