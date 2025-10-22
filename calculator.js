@@ -88,7 +88,7 @@ function rerender() {
 
 function init() {
   document
-    .querySelector(".calc-buttons")
+    .querySelector(".cal-buttons")
     .addEventListener("click", function (event) {
       buttonClick(event.target.innerText);
     });
